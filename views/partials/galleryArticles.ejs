@@ -1,0 +1,66 @@
+<%# nslider cdn links %>
+<head>
+			<script src="https://cdn.jsdelivr.net/gh/fatihege/nslider@1.0.0/src/js/nslider.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fatihege/nslider@1.0.0/src/css/nslider.min.css" />
+    <link rel="stylesheet" href="nslider.min.css" />
+	</head>
+
+	<%# parent container %>
+	<div class="carouselContainer2">
+				<h2>Articles</h2>
+				<p> Here are some articles about education.</p>
+				<%# slider %>
+    		<div class="nslider">
+      	  <div class="nslider-wrapper">
+            <div class="nslider-slide" id="slide-1">
+						<%# card content %>
+              <div class="galleryCard">
+							 	<a href="https://www.britannica.com/topic/education" target="_blank">
+								 <article>
+								 	 <h2>Education!</h2>
+									 <p>Education, discipline that is concerned with methods of teaching and learning in schools or school-like environments as opposed to various nonformal and informal means of socialization (e.g., rural development projects and education through parent-child relationships).
+</p>
+									</article>
+							</div>
+            </div>
+            <div class="nslider-slide" id="slide-2">
+						<%# card content %>
+               <div class="galleryCard">
+							 	<a href="https://www.educationcorner.com/study-motivation-tips.html" target="_blank">
+								 <article>
+								 	 <h2>16 Study Motivation Tips, Tricks, and Hacks</h2>
+									 <p>Maybe coming here is your next form of procrastination. If so, at least you’re on the right track.
+
+Not every study motivation strategy is going to work for everyone, but there’s something out there that will work for you. We’ve compiled a list of study motivation ideas to try out when you just need to buckle down and get it done..</p>
+									</article>
+							</div>
+            </div>
+						 <div class="nslider-slide" id="slide-3" target="_blank">
+						<%# card content %>
+               <div class="galleryCard">
+							 	<a href="https://www.sciencenewsforstudents.org/article/top-10-tips-study-smarter-not-longer-study-skills">
+								 <article>
+								 	 <h2>Top 10 tips on how to study smarter, not longer</h2>
+									 <p>As a teen, Faria Sana often highlighted books with markers. “The colors were supposed to tell me different things.” Later, she recalls, “I had no idea what those highlighted texts were supposed to mean.”
+
+She also took lots of notes as she read. But often she was “just copying words or changing the words around.” That work didn’t help much either, she says now. In effect, “it was just to practice my handwriting skills.”</p>
+									</article>
+							</div>
+            </div>
+        </div>
+        <div class="nslider-button nslider-button-prev"></div>
+        <div class="nslider-button nslider-button-next"></div>
+    		</div>
+			</div>
+
+		<script src="nslider.min.js"></script>
+		<script type="text/javascript">
+			// Carousel Slider
+			// leave me alone I dont know javascript
+		const slider2 = new NSlider({
+        elem: document.querySelector('.carouselContainer2'),      
+        animation: false,
+        keyboardControl: false,
+        dots: true,
+    });
+		</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%# Head %>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AR - Retro Study </title>
+		<link rel="stylesheet" href="/styles/style.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/43c1b0f304.js" crossOrigin="anonymous"></script>
+	</head>
+	<%# end of head %>
+	<body>
+		<%# Import Nav %>
+		<header>
+			<%- include('../partials/nav') %>
+		</header>
+
+		<%# Main content %>
+		<main>
+			<%# Absolute SVG that is displayed on page %>
+			<img src="/media/topItem.svg" class="topItemLarge" />
+			<%# Text Header at top of page %>
+			<article class="vrHeader">
+				<h1>Augmented Reality</h1>
+				<p>AR aids students in gaining a better understanding of ideas. It allows children to visualise things and develop an interest in learning more about them in an entertaining way. Students will be able to learn and memorise information more quickly .Here you can see AR of Brain, Skull etc. </p>
+			</article>
+			<%# Import cards %>
+			<section>
+				<%- include('../partials/arCards') %>
+				<%# Absolute SVGs that are displayed on page %>
+				<div class="arImgWrap">
+					<img src="/media/arImg.svg" class="arImg" />
+				</div>
+				<img src="/media/ellipse.svg" class="ellipseTwo" />
+			</section>
+		</main>
+		<%# End of main content %>
+
+		<%# Import footer %>
+		<footer>
+			<%- include('../partials/footer') %>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<%# nslider cdn links %>
+<head>
+			<script src="https://cdn.jsdelivr.net/gh/fatihege/nslider@1.0.0/src/js/nslider.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fatihege/nslider@1.0.0/src/css/nslider.css" />
+    <link rel="stylesheet" href="css/nslider.css" />
+	</head>
+	<%# parent container %>
+	<div class="carouselContainer">
+				<h2>Videos</h2>
+        <p>Here are some videos.</p>
+				<%# slider %>
+    		<div class="nslider">
+      	  <div class="nslider-wrapper">
+            <div class="nslider-slide" id="slide-1">
+						<%# card content %>
+              <div class="galleryCard">
+							 	<a href="https://youtu.be/682UWmGBjqY">
+								 <img src="https://i.ytimg.com/vi/682UWmGBjqY/maxresdefault.jpg" alt="thumbnail" />
+								 <article>
+								 	 <h2>Prime Numbers </h2>
+									 <p>Numbers such as 2, 3, 5, 7, 11, 13 and so on are prime numbers.But these look like ordinary numbers. Why do we call them weird? We call them weird because there are infinitely many prime numbers. There is no end. So, no one can find the biggest prime number. Every time, there will be a bigger one yet to be discovered.</p>
+									</article>
+							</div>
+            </div>
+            <div class="nslider-slide" id="slide-2">
+						<%# card content %>
+               <div class="galleryCard">
+							 	<a href="https://youtu.be/h_w8Zta_hDM" target="_blank">
+								 <img src="https://i.ytimg.com/vi/h_w8Zta_hDM/maxresdefault.jpg" alt="thumbnail" />
+								 <article>
+								 	 <h2>Are Einstein's Gravitational Waves real? ?</h2>
+									 <p>Gravity is the attractive force with which two objects pull each other.
+However, Albert Einstein imagined gravity as well as space and time a little differently. His theory of general relativity unified two separate entities space and time into a single entity called spacetime. Spacetime can be considered as the fabric of universe. </p>
+									</article>
+							</div>
+            </div>
+						 <div class="nslider-slide" id="slide-3">
+						<%# card content %>
+               <div class="galleryCard">
+							 	<a href="https://youtu.be/kJ-6Qy05u_Q" target="_blank">
+								 <img src="https://i.ytimg.com/vi/kJ-6Qy05u_Q/maxresdefault.jpg" alt="thumbnail" />
+
+								 <article>
+								 	 <h2>Dalton's Atomic Theory</h2>
+									 <p>John Dalton was an English scientist who is well known for his work in the development of atomic theory.
+All matter, whether an element, a compound or a mixture are made up of very tiny particles called atoms.</p>
+									</article>
+							</div>
+            </div>
+        </div>
+        <div class="nslider-button nslider-button-prev"></div>
+        <div class="nslider-button nslider-button-next"></div>
+    		</div>
+			</div>
+
+		<script src="js/nslider.js"></script>
+		<script type="text/javascript">
+			// Carousel Slider
+		const slider = new NSlider({
+        elem: document.querySelector('.carouselContainer'),      
+        animation: false,
+        keyboardControl: false,
+        dots: true,
+    });
+		</script>
