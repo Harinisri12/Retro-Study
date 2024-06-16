@@ -1,0 +1,6 @@
+run = "node app.js"
+entrypoint = "main.sh"
+
+[[ports]]
+localPort = 80
+externalPort = 80
